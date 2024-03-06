@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vuejs Basics</title>
+</head>
+
+<body>
+
+  <div id="app">
+    <h2> My name is {{ name }}</h2>
+    <h2>{{ welcome('muhmmod') }}</h2>
+    <a v-bind:href="link">google</a>
+    <a :href="link">google</a>
+
+    <button v-on:click="myfunction"> Login </button>
+    <button @click="myfunction"> Login 2 </button>
+
+    <button v-on:dblclick="myfunction"> Login 3  </button>
+    <button @dblclick="myfunction"> Login 4 </button>
+
+    <h2> the count is {{ count }}</h2>
+
+    <button @click="increaseCount"> Increase Count </button>
+    <button @click="decreaseCount"> Decrease Count </button>
+
+
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="./code.js"></script>
+
+</body>
+
+</html>
